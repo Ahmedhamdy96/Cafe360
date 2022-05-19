@@ -13,6 +13,7 @@ body {
   font-family: "Josefin Sans", sans-serif; }
 
 .container {
+  width: 100%;
   max-width: 144rem;
   margin: auto;
   padding: 0 1.5rem; }
@@ -73,7 +74,8 @@ input {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 555; }
   .scroll-btn-container .icon {
     display: flex;
     justify-content: center;
@@ -157,3 +159,49 @@ header .container {
     @media only screen and (max-width: 56.25em) {
       header .container .burger-icon {
         display: block; } }
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #464952; }
+
+p {
+  color: #999999;
+  line-height: 1.7;
+  font-size: 2rem; }
+
+.landing .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .landing .container .text-content {
+    flex-basis: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .landing .container .text-content {
+        text-align: center;
+        flex-basis: 100%;
+        margin: 5rem 0; } }
+  .landing .container p:first-of-type {
+    color: #464952;
+    margin-bottom: 1rem; }
+  .landing .container p:last-of-type {
+    margin: 4rem 0; }
+  .landing .container .img-container {
+    padding-top: 4rem;
+    flex-basis: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .landing .container .img-container {
+        flex-basis: 100%;
+        text-align: center; } }
+    .landing .container .img-container img {
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 10rem; }
+      @media only screen and (max-width: 56.25em) {
+        .landing .container .img-container img {
+          left: 0; } }
+      @media only screen and (max-width: 37.5em) {
+        .landing .container .img-container img {
+          left: 0;
+          width: 80%; } }

@@ -1,0 +1,46 @@
+.landing {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .text-content {
+      @include respond(phone) {
+        text-align: center;
+        flex-basis: 100%;
+        margin: 5rem 0;
+      }
+      flex-basis: 50%;
+    }
+    p:first-of-type {
+      color: $color-gray-dark;
+      margin-bottom: 1rem;
+    }
+    p:last-of-type {
+      margin: 4rem 0;
+    }
+
+    .img-container {
+      padding-top: 4rem;
+      @include respond(phone) {
+        flex-basis: 100%;
+        text-align: center;
+      }
+      flex-basis: 50%;
+
+      img {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 10rem;
+        @include respond(tablet-portrait) {
+          left: 0;
+        }
+        @include respond(phone) {
+          left: 0;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
