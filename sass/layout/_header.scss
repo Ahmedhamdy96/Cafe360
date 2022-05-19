@@ -1,0 +1,59 @@
+header {
+  .container {
+    height: 6rem;
+    & > * {
+      height: 100%;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 2rem;
+      li {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        a {
+          color: $color-gray-dark;
+          transition: 0.3s;
+        }
+
+        &:hover a {
+          color: $color-main;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0rem;
+          height: 3px;
+          width: 0;
+          transition: 0.3s;
+          background-color: $color-main;
+        }
+        &:hover::before {
+          width: 50%;
+        }
+      }
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      &__icon {
+        color: $color-main;
+        font-size: 2.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

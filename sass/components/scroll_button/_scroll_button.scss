@@ -1,0 +1,36 @@
+.scroll-btn-container {
+  position: fixed;
+
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+
+  & .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff;
+    border: 3px solid $color-main;
+    color: $color-main;
+    font-size: 3rem;
+    transition: 0.3s;
+    &:hover {
+      color: #fff;
+      background-color: $color-main;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    animation: scrollAnimation 2.5s infinite linear;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-gray-dark;
+    z-index: -5;
+  }
+}

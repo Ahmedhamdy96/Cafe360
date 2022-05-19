@@ -1,0 +1,32 @@
+.btn {
+  color: #fff;
+  background-color: $color-main;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 2.5rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: $color-main-light;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: $color-gray-dark;
+}
+.btn:hover::before {
+  width: 100%;
+}

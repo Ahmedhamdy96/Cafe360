@@ -11,3 +11,133 @@ html {
 
 body {
   font-family: "Josefin Sans", sans-serif; }
+
+.container {
+  max-width: 144rem;
+  margin: auto;
+  padding: 0 1.5rem; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+input {
+  font-family: inherit; }
+
+.btn {
+  color: #fff;
+  background-color: #34bf49;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 2.5rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1; }
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #58ee6e;
+  transition: 0.3s;
+  z-index: -1; }
+
+.btn:hover {
+  color: #464952; }
+
+.btn:hover::before {
+  width: 100%; }
+
+@keyframes scrollAnimation {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1; }
+  50% {
+    width: 7rem;
+    height: 7rem;
+    opacity: 0; }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0; } }
+
+.scroll-btn-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer; }
+  .scroll-btn-container .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff;
+    border: 3px solid #34bf49;
+    color: #34bf49;
+    font-size: 3rem;
+    transition: 0.3s; }
+    .scroll-btn-container .icon:hover {
+      color: #fff;
+      background-color: #34bf49; }
+  .scroll-btn-container::before {
+    content: "";
+    position: absolute;
+    animation: scrollAnimation 2.5s infinite linear;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #464952;
+    z-index: -5; }
+
+header .container {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header .container > * {
+    height: 100%; }
+  header .container .logo {
+    display: flex;
+    align-items: center; }
+  header .container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem; }
+    header .container ul li {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      header .container ul li a {
+        color: #464952;
+        transition: 0.3s; }
+      header .container ul li:hover a {
+        color: #34bf49; }
+      header .container ul li::before {
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        height: 3px;
+        width: 0;
+        transition: 0.3s;
+        background-color: #34bf49; }
+      header .container ul li:hover::before {
+        width: 50%; }
+  header .container .search {
+    display: flex;
+    align-items: center; }
+    header .container .search__icon {
+      color: #34bf49;
+      font-size: 2.5rem;
+      cursor: pointer; }
