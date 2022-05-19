@@ -5,6 +5,10 @@
     font-size: 4rem;
     color: $color-main;
     width: 65%;
+    @include respond(phone) {
+      width: 100%;
+      font-size: 2.6rem;
+    }
     line-height: 1.7;
     margin: 4rem auto;
   }
