@@ -1,0 +1,17 @@
+.section-heading {
+  text-align: center;
+  padding: 10rem 0;
+  h2 {
+    font-size: 4rem;
+    color: $color-main;
+    margin: 4rem 0;
+  }
+  p {
+    width: 50%;
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    margin: auto;
+  }
+}
