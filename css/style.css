@@ -241,6 +241,7 @@ p {
       justify-content: center;
       text-align: center; } }
   .recipe_box__img-container {
+    position: relative;
     width: 47rem;
     height: 40rem;
     overflow: hidden; }
@@ -253,6 +254,20 @@ p {
       transition: 0.3s ease-in-out; }
       .recipe_box__img-container img:hover {
         transform: scale(1.2); }
+    .recipe_box__img-container::before {
+      content: "";
+      position: absolute;
+      left: -100%;
+      top: 50%;
+      width: 30%;
+      height: 200%;
+      transform-origin: center;
+      transform: translateY(-50%) rotate(-45deg);
+      background-color: #50e967a8;
+      transition: 0.5s ease-in-out;
+      z-index: 5; }
+    .recipe_box__img-container:hover::before {
+      left: 200%; }
   .recipe_box__details {
     flex-basis: 60%;
     display: flex;
