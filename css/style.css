@@ -223,7 +223,9 @@ p {
   .section-heading h2 {
     font-size: 4rem;
     color: #34bf49;
-    margin: 4rem 0; }
+    width: 65%;
+    line-height: 1.7;
+    margin: 4rem auto; }
   .section-heading p {
     width: 50%;
     margin: auto; }
@@ -283,3 +285,6 @@ p {
       color: #464952;
       font-size: 4rem;
       margin: 4rem 0; }
+
+.my {
+  margin: 5rem auto; }
