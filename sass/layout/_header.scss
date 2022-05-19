@@ -15,8 +15,13 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 4rem;
       font-size: 2rem;
+
+      @include respond(tablet-portrait) {
+        display: none;
+      }
+
       li {
         position: relative;
         height: 100%;
@@ -53,6 +58,22 @@ header {
         color: $color-main;
         font-size: 2.5rem;
         cursor: pointer;
+      }
+      @include respond(tablet-portrait) {
+        display: none;
+      }
+    }
+
+    .burger-icon {
+      display: none;
+      color: $color-main;
+      position: fixed;
+      right: 2rem;
+      top: 2rem;
+      font-size: 3rem;
+
+      @include respond(tablet-portrait) {
+        display: block;
       }
     }
   }
