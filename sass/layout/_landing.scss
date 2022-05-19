@@ -2,6 +2,7 @@
   .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 
     .text-content {
@@ -22,17 +23,22 @@
 
     .img-container {
       padding-top: 4rem;
+      flex-basis: 50%;
+      @include respond(tablet-portrait) {
+        flex-basis: 40%;
+      }
+
       @include respond(phone) {
         flex-basis: 100%;
         text-align: center;
       }
-      flex-basis: 50%;
 
       img {
-        width: 100%;
+        width: 95%;
         position: relative;
         top: 0;
         left: 10rem;
+        animation: spinDish 30s infinite linear;
         @include respond(tablet-portrait) {
           left: 0;
         }

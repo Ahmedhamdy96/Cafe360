@@ -173,6 +173,7 @@ p {
 .landing .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center; }
   .landing .container .text-content {
     flex-basis: 50%; }
@@ -189,15 +190,19 @@ p {
   .landing .container .img-container {
     padding-top: 4rem;
     flex-basis: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .landing .container .img-container {
+        flex-basis: 40%; } }
     @media only screen and (max-width: 37.5em) {
       .landing .container .img-container {
         flex-basis: 100%;
         text-align: center; } }
     .landing .container .img-container img {
-      width: 100%;
+      width: 95%;
       position: relative;
       top: 0;
-      left: 10rem; }
+      left: 10rem;
+      animation: spinDish 30s infinite linear; }
       @media only screen and (max-width: 56.25em) {
         .landing .container .img-container img {
           left: 0; } }
@@ -205,3 +210,9 @@ p {
         .landing .container .img-container img {
           left: 0;
           width: 80%; } }
+
+@keyframes spinDish {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
