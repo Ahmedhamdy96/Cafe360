@@ -164,6 +164,36 @@ header .container {
       header .container .burger-icon {
         display: block; } }
 
+@keyframes outerCircleSpin {
+  0% {
+    transform: rotate(-2deg); }
+  100% {
+    transform: rotate(2deg); } }
+
+@keyframes innerCircleSpin {
+  0% {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(50deg);
+    transform: rotate(2deg); }
+  100% {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(50deg);
+    transform: rotate(-2deg); } }
+
+@keyframes centerImg {
+  0% {
+    opacity: 0;
+    width: 10rem;
+    height: 10rem; }
+  50% {
+    opacity: 1;
+    width: 15rem;
+    height: 15rem; }
+  100% {
+    opacity: 0;
+    width: 20rem;
+    height: 20rem; } }
+
 h1 {
   font-size: 5rem;
   font-weight: bold;
@@ -512,28 +542,30 @@ p {
         width: 100%;
         height: 100%;
         border: 1px solid #34bf49;
+        animation: outerCircleSpin 3s infinite alternate linear;
         border-radius: 50%; }
         .users-testimonials .container .circles .circle:first-of-type > div {
           width: 10rem;
           height: 10rem; }
       .users-testimonials .container .circles .circle:nth-of-type(2) {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(50deg);
+        top: 10rem;
+        left: 10rem;
+        transform: translate(-50%, -50%);
         width: 40rem;
         height: 40rem;
         border: 1px solid #34bf49;
-        border-radius: 50%; }
+        border-radius: 50%;
+        animation: innerCircleSpin 3s infinite alternate linear; }
         .users-testimonials .container .circles .circle:nth-of-type(2) > div {
           width: 10rem;
-          height: 10rem;
-          transform: rotate(-50deg); }
+          height: 10rem; }
       .users-testimonials .container .circles .circle:last-of-type {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); }
+        transform: translate(-50%, -50%);
+        animation: centerImg 5s infinite; }
     .users-testimonials .container .circles .inner-1--1 {
       position: absolute;
       top: 50%;
@@ -551,18 +583,18 @@ p {
       transform: translateY(-50%); }
     .users-testimonials .container .circles .inner-2--1 {
       position: absolute;
-      top: 50%;
+      top: 35%;
       left: -4rem;
       transform: translateY(-50%); }
     .users-testimonials .container .circles .inner-2--2 {
       position: absolute;
-      top: -4rem;
-      left: 50%;
+      top: 0;
+      left: 80%;
       transform: translateX(-50%); }
     .users-testimonials .container .circles .inner-2--3 {
       position: absolute;
-      right: 0;
-      top: 68%;
+      right: 6rem;
+      top: 92%;
       transform: translateY(-50%); }
 
 .users-testimonials .testimonials {
