@@ -398,7 +398,8 @@ p {
   .footer .container {
     text-align: center; }
     .footer .container .logo {
-      margin: 10rem 0 5rem 0; }
+      margin: 10rem auto 5rem auto;
+      width: 20rem; }
       @media only screen and (max-width: 37.5em) {
         .footer .container .logo {
           margin: 5rem 0 5rem 0; } }
