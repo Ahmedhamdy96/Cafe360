@@ -389,3 +389,107 @@ p {
           border-color: #fff; }
     .footer .container .copyright {
       color: #fff; }
+
+.chefs-slider {
+  position: relative;
+  margin: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .chefs-slider {
+      margin: 2rem 1rem; } }
+  .chefs-slider .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 37.5em) {
+      .chefs-slider .swiper-slide {
+        gap: 0;
+        text-align: center; } }
+    .chefs-slider .swiper-slide .img {
+      width: 40rem;
+      height: 50rem;
+      padding: 3rem;
+      overflow: hidden; }
+      @media only screen and (max-width: 37.5em) {
+        .chefs-slider .swiper-slide .img {
+          width: 20rem;
+          height: 20rem;
+          margin: auto; } }
+      .chefs-slider .swiper-slide .img img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+        @media only screen and (max-width: 37.5em) {
+          .chefs-slider .swiper-slide .img img {
+            border-radius: 50%;
+            box-shadow: none; } }
+    .chefs-slider .swiper-slide .content {
+      flex-basis: 60%;
+      padding-top: 5rem;
+      padding-right: 5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .chefs-slider .swiper-slide .content {
+          flex-basis: 100%;
+          padding: 0;
+          padding-bottom: 5rem; } }
+      .chefs-slider .swiper-slide .content h2 {
+        font-size: 4rem;
+        color: #464952;
+        margin-bottom: 3rem; }
+        @media only screen and (max-width: 37.5em) {
+          .chefs-slider .swiper-slide .content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem; } }
+      .chefs-slider .swiper-slide .content p {
+        margin-bottom: 2rem; }
+        @media only screen and (max-width: 37.5em) {
+          .chefs-slider .swiper-slide .content p {
+            text-align: left;
+            font-size: 1.5rem; } }
+      .chefs-slider .swiper-slide .content .chef-details {
+        position: absolute;
+        bottom: 1rem; }
+        @media only screen and (max-width: 37.5em) {
+          .chefs-slider .swiper-slide .content .chef-details {
+            margin-top: 3rem; } }
+        .chefs-slider .swiper-slide .content .chef-details .chef-name {
+          margin-bottom: -1rem;
+          color: #34bf49;
+          font-weight: bold; }
+        .chefs-slider .swiper-slide .content .chef-details .position {
+          margin: 0; }
+  .chefs-slider .nav-btns {
+    position: absolute;
+    width: 13rem;
+    height: 5rem;
+    right: 5rem;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .chefs-slider .nav-btns {
+        width: 12rem;
+        margin-top: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .chefs-slider .nav-btns {
+        right: 0; } }
+    .chefs-slider .nav-btns .prev,
+    .chefs-slider .nav-btns .next {
+      border: 2px solid #34bf49;
+      color: #34bf49;
+      padding: 2rem;
+      transition: all 0.3s ease-in-out; }
+      @media only screen and (max-width: 37.5em) {
+        .chefs-slider .nav-btns .prev,
+        .chefs-slider .nav-btns .next {
+          padding: 1rem 2rem; } }
+    .chefs-slider .nav-btns .prev:hover,
+    .chefs-slider .nav-btns .next:hover {
+      color: #fff;
+      background-color: #34bf49; }
+    .chefs-slider .nav-btns .prev::after,
+    .chefs-slider .nav-btns .next::after {
+      font-size: 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .chefs-slider .nav-btns .prev::after,
+        .chefs-slider .nav-btns .next::after {
+          font-size: 2rem; } }
