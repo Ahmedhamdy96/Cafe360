@@ -12,6 +12,10 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif; }
 
+img {
+  width: 100%;
+  height: 100%; }
+
 .container {
   width: 100%;
   max-width: 144rem;
@@ -496,21 +500,83 @@ p {
 
 .users-testimonials .container {
   display: flex;
-  justify-content: center; }
+  justify-content: space-between; }
   .users-testimonials .container .circles {
-    width: 50%;
-    font-size: 5rem; }
-  .users-testimonials .container .testimonials {
-    width: 50%; }
-    .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide img {
-      margin-bottom: 2rem; }
-    .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide p {
-      margin-bottom: 2rem; }
-    .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author {
-      margin-top: 5rem; }
-      .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author .name {
-        color: #464952;
-        font-weight: bold;
-        margin-bottom: 0; }
-      .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author .position {
-        color: #999999; }
+    width: 60rem;
+    height: 60rem;
+    font-size: 5rem;
+    position: relative; }
+    .users-testimonials .container .circles .circle {
+      position: relative; }
+      .users-testimonials .container .circles .circle:first-of-type {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #34bf49;
+        border-radius: 50%; }
+        .users-testimonials .container .circles .circle:first-of-type > div {
+          width: 10rem;
+          height: 10rem; }
+      .users-testimonials .container .circles .circle:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(50deg);
+        width: 40rem;
+        height: 40rem;
+        border: 1px solid #34bf49;
+        border-radius: 50%; }
+        .users-testimonials .container .circles .circle:nth-of-type(2) > div {
+          width: 10rem;
+          height: 10rem;
+          transform: rotate(-50deg); }
+      .users-testimonials .container .circles .circle:last-of-type {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .users-testimonials .container .circles .inner-1--1 {
+      position: absolute;
+      top: 50%;
+      left: -4rem;
+      transform: translateY(-50%); }
+    .users-testimonials .container .circles .inner-1--2 {
+      position: absolute;
+      top: -4rem;
+      left: 50%;
+      transform: translateX(-50%); }
+    .users-testimonials .container .circles .inner-1--3 {
+      position: absolute;
+      right: -4rem;
+      top: 50%;
+      transform: translateY(-50%); }
+    .users-testimonials .container .circles .inner-2--1 {
+      position: absolute;
+      top: 50%;
+      left: -4rem;
+      transform: translateY(-50%); }
+    .users-testimonials .container .circles .inner-2--2 {
+      position: absolute;
+      top: -4rem;
+      left: 50%;
+      transform: translateX(-50%); }
+    .users-testimonials .container .circles .inner-2--3 {
+      position: absolute;
+      right: 0;
+      top: 68%;
+      transform: translateY(-50%); }
+
+.users-testimonials .testimonials {
+  width: 50%; }
+  .users-testimonials .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide img {
+    width: 8rem;
+    margin-bottom: 2rem; }
+  .users-testimonials .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide p {
+    margin-bottom: 2rem; }
+  .users-testimonials .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author {
+    margin-top: 5rem; }
+    .users-testimonials .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author .name {
+      color: #464952;
+      font-weight: bold;
+      margin-bottom: 0; }
+    .users-testimonials .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author .position {
+      color: #999999; }
