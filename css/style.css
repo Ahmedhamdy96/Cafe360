@@ -493,3 +493,24 @@ p {
         .chefs-slider .nav-btns .prev::after,
         .chefs-slider .nav-btns .next::after {
           font-size: 2rem; } }
+
+.users-testimonials .container {
+  display: flex;
+  justify-content: center; }
+  .users-testimonials .container .circles {
+    width: 50%;
+    font-size: 5rem; }
+  .users-testimonials .container .testimonials {
+    width: 50%; }
+    .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide img {
+      margin-bottom: 2rem; }
+    .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide p {
+      margin-bottom: 2rem; }
+    .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author {
+      margin-top: 5rem; }
+      .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author .name {
+        color: #464952;
+        font-weight: bold;
+        margin-bottom: 0; }
+      .users-testimonials .container .testimonials .swiper.usersSwiper .swiper-wrapper .swiper-slide .author .position {
+        color: #999999; }
