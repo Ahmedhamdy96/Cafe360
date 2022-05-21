@@ -15,3 +15,12 @@ let usersSwiper = new Swiper(".usersSwiper", {
     disableOnInteraction: false,
   },
 });
+
+// menu slider
+let menuSwiper = new Swiper(".menuSwiper", {
+  spaceBetween: 50,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

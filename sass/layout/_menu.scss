@@ -1,9 +1,11 @@
 .menu {
   .container {
     display: flex;
-
+    align-items: center;
+    gap: 2rem;
+    height: 60rem;
     .categories {
-      flex-basis: 30%;
+      width: 20%;
       //   background-color: palegoldenrod;
 
       ul {
@@ -28,8 +30,77 @@
     }
 
     .slider {
-      flex-basis: 100%;
-      //   background-color: sandybrown;
+      width: 75%;
+      height: 100%;
+      //   background-color: tan;
+      position: relative;
+      .wrapper {
+        .slide {
+          overflow: hidden;
+          .title {
+            color: $color-gray-dark;
+            margin-bottom: 3rem;
+            font-size: 4rem;
+            width: 50%;
+          }
+          .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 3rem;
+            margin-bottom: 3rem;
+
+            .desc {
+              flex-basis: 80%;
+            }
+            .cta {
+              padding: 2rem 3rem;
+            }
+          }
+
+          .img {
+            width: 100%;
+            img {
+              //   width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      .nav-btns {
+        position: absolute;
+        top: 5rem;
+        right: 1rem;
+        width: 13rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .prev,
+        .next {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 5rem;
+          height: 5rem;
+          border: 1px solid $color-main;
+        }
+        .prev:hover,
+        .next:hover {
+          background-color: $color-main;
+        }
+        .prev::after,
+        .next::after {
+          color: $color-main;
+          font-size: 2rem;
+        }
+
+        .prev:hover::after,
+        .next:hover::after {
+          color: #fff;
+        }
+      }
     }
   }
 }

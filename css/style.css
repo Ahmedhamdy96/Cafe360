@@ -689,9 +689,12 @@ p {
       color: #999999; }
 
 .menu .container {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 60rem; }
   .menu .container .categories {
-    flex-basis: 30%; }
+    width: 20%; }
     .menu .container .categories ul li {
       padding: 3rem;
       margin-bottom: 3rem;
@@ -707,4 +710,53 @@ p {
         background-color: #fff;
         box-shadow: 0 0 5rem 0 rgba(217, 217, 217, 0.9); }
   .menu .container .slider {
-    flex-basis: 100%; }
+    width: 75%;
+    height: 100%;
+    position: relative; }
+    .menu .container .slider .wrapper .slide {
+      overflow: hidden; }
+      .menu .container .slider .wrapper .slide .title {
+        color: #464952;
+        margin-bottom: 3rem;
+        font-size: 4rem;
+        width: 50%; }
+      .menu .container .slider .wrapper .slide .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 3rem;
+        margin-bottom: 3rem; }
+        .menu .container .slider .wrapper .slide .details .desc {
+          flex-basis: 80%; }
+        .menu .container .slider .wrapper .slide .details .cta {
+          padding: 2rem 3rem; }
+      .menu .container .slider .wrapper .slide .img {
+        width: 100%; }
+        .menu .container .slider .wrapper .slide .img img {
+          object-fit: cover; }
+    .menu .container .slider .nav-btns {
+      position: absolute;
+      top: 5rem;
+      right: 1rem;
+      width: 13rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem; }
+      .menu .container .slider .nav-btns .prev,
+      .menu .container .slider .nav-btns .next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        border: 1px solid #34bf49; }
+      .menu .container .slider .nav-btns .prev:hover,
+      .menu .container .slider .nav-btns .next:hover {
+        background-color: #34bf49; }
+      .menu .container .slider .nav-btns .prev::after,
+      .menu .container .slider .nav-btns .next::after {
+        color: #34bf49;
+        font-size: 2rem; }
+      .menu .container .slider .nav-btns .prev:hover::after,
+      .menu .container .slider .nav-btns .next:hover::after {
+        color: #fff; }
