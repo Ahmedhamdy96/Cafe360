@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5rem 0;
 
   @include respond(phone) {
     justify-content: center;
@@ -13,8 +12,13 @@
     position: relative;
     width: 47rem;
     height: 40rem;
+    @include respond(tablet-portrait) {
+      width: 30rem;
+      height: 30rem;
+    }
     @include respond(phone) {
       flex-basis: 100%;
+      border-radius: 2rem;
     }
     overflow: hidden;
     img {
@@ -46,9 +50,12 @@
   }
 
   &__details {
-    flex-basis: 60%;
+    flex-basis: 55%;
+    @include respond(tablet-portrait) {
+    }
     @include respond(phone) {
       flex-basis: 100%;
+      padding: 2rem 0;
     }
 
     &.second {
@@ -62,8 +69,17 @@
     justify-content: center;
     h3 {
       color: $color-gray-dark;
-      font-size: 4rem;
-      margin: 4rem 0;
+      @include respond(phone) {
+        text-align: left;
+      }
     }
+    p {
+      @include respond(phone) {
+        text-align: left;
+      }
+    }
+  }
+  &:last-of-type {
+    margin-bottom: 1rem;
   }
 }

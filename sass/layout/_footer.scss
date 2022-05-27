@@ -1,5 +1,8 @@
 .footer {
   padding: 10rem 0 2rem 0;
+  @include respond(phone) {
+    padding: 5rem 0 2rem 0;
+  }
   background-image: url("./../imgs/footer-back.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,7 +25,7 @@
       width: 20rem;
 
       @include respond(phone) {
-        margin: 5rem 0 5rem 0;
+        margin: 5rem auto 5rem auto;
       }
     }
     ul {
@@ -31,6 +34,7 @@
       gap: 2rem;
       @include respond(phone) {
         flex-direction: column;
+        gap: 3rem;
       }
     }
     ul li a {
@@ -50,13 +54,23 @@
 
       gap: 3rem;
       @include respond(phone) {
-        gap: 2rem;
+        gap: 1rem;
       }
       margin-bottom: 10rem;
+
+      @include respond(phone) {
+        margin-bottom: 5rem;
+      }
 
       .icon-box {
         width: 5rem;
         height: 5rem;
+
+        @include respond(phone) {
+          width: 4rem;
+          height: 4rem;
+        }
+
         display: flex;
         align-items: center;
         justify-content: center;

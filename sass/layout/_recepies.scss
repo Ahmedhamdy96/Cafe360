@@ -1,0 +1,38 @@
+.recepies {
+  position: relative;
+  background-image: url("./../imgs/bg-shape2.png");
+
+  .imgDots {
+    position: absolute;
+    width: 40rem;
+    height: 50rem;
+    @include respond(tablet-portrait) {
+      width: 20rem;
+      height: 25rem;
+    }
+    overflow: hidden;
+
+    &--top {
+      left: 5%;
+      top: -14%;
+      @include respond(laptop) {
+        top: -2%;
+        left: 0%;
+      }
+      @include respond(tablet-portrait) {
+        top: -2%;
+        left: 0%;
+      }
+    }
+    &--bottom {
+      right: 0;
+      bottom: -2%;
+      z-index: -5;
+      @include respond(tablet-portrait) {
+        right: 0%;
+        bottom: -2%;
+        z-index: -5;
+      }
+    }
+  }
+}

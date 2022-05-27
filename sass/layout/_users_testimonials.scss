@@ -1,7 +1,13 @@
 .users-testimonials {
+  @include respond(phone) {
+    margin-top: 5rem;
+  }
   .container {
     display: flex;
     justify-content: space-between;
+    @include respond(tablet-portrait) {
+      justify-content: center;
+    }
     @include respond(phone) {
       justify-content: center;
     }
@@ -11,9 +17,14 @@
       // width: 50%;
       width: 60rem;
       height: 60rem;
+      @include respond(tablet-portrait) {
+        // padding-top: 5rem;
+        margin-top: 5rem;
+      }
       @include respond(phone) {
         width: 30rem;
         height: 30rem;
+        padding-top: 0;
       }
       font-size: 5rem;
       position: relative;
@@ -132,6 +143,13 @@
 
   .testimonials {
     width: 50%;
+    @include respond(laptop) {
+      width: 45%;
+    }
+    @include respond(tablet-portrait) {
+      width: 90%;
+      margin: 5rem 0;
+    }
     @include respond(phone) {
       width: 100%;
       margin-top: 3rem;

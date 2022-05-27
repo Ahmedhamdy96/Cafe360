@@ -1,23 +1,22 @@
 .section-heading {
-  text-align: center;
-  padding: 10rem 0;
   h2 {
-    font-size: 4rem;
     color: $color-main;
     width: 65%;
+    line-height: 1.7;
+    @include respond(tablet-portrait) {
+      width: 80%;
+    }
     @include respond(phone) {
       width: 100%;
-      font-size: 2.6rem;
     }
-    line-height: 1.7;
-    margin: 4rem auto;
   }
   p {
     width: 50%;
+    @include respond(tablet-portrait) {
+      width: 80%;
+    }
     @include respond(phone) {
       width: 100%;
     }
-
-    margin: auto;
   }
 }

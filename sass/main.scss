@@ -1,4 +1,6 @@
 @import "./mixins/media.scss";
+@import "./layout/recepies.scss";
+
 @import "./colors/colors.scss";
 @import "./base/base.scss";
 @import "./components/cta_button/button";
@@ -20,3 +22,4 @@
 @import "./layout/chefs_slider.scss";
 @import "./layout/users_testimonials.scss";
 @import "./layout/menu.scss";
+@import "./layout/download.scss";

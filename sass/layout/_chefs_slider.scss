@@ -1,121 +1,32 @@
-// .chefs-slider {
-//   .container {
-//     .mySwiper {
-//       .swiper-wrapper {
-//         .swiper-slide {
-//           position: relative;
-//           display: flex;
-//           flex-wrap: wrap;
-//           justify-content: space-between;
-//           // gap: 5rem;
-//           padding: 5rem;
-//           @include respond(phone) {
-//             padding: 0rem;
-//             text-align: center;
-//           }
-//           .img {
-//             overflow: hidden;
-//             // box-shadow: 0rem 4rem 2rem rgb(80 80 80 / 30%);
-//             @include respond(phone) {
-//               width: 20rem;
-//               height: 20rem;
-//               border-radius: 50%;
-//             }
-//             @include respond(phone) {
-//               margin: 5rem auto;
-//             }
-//             img {
-//               width: 100%;
-//               height: 100%;
-//             }
-//           }
-//           .content {
-//             flex-basis: 64%;
-//             @include respond(phone) {
-//               flex-basis: 100%;
-//             }
-//             padding-right: 2rem;
-//             h2 {
-//               color: $color-gray-dark;
-//               font-size: 3.5rem;
-//               margin-bottom: 5rem;
-//             }
-//             p:first-of-type {
-//               margin-bottom: 2.5rem;
-//             }
-//             .chef-details {
-//               position: absolute;
-//               bottom: 5rem;
-//               @include respond(phone) {
-//                 position: relative;
-//               }
-//               .chef-name {
-//                 font-size: 2rem;
-//                 font-weight: bold;
-//                 color: $color-main;
-//                 margin-bottom: 0;
-//               }
-//               .position {
-//                 color: $color-gray-light;
-//               }
-//             }
-//           }
-//         }
-//       }
-//       .next {
-//         // position: absolute;
-//         // top: calc(100% - 10rem);
-//         // right: 0rem;
-//         color: $color-main;
-//         background-color: #fff;
-//         border: 2px solid $color-main;
-//         padding: 3rem;
-//         // @include respond(phone) {
-//         //   top: 100%;
-//         //   position: relative;
-//         //   right: -80%;
-//         // }
-//       }
-
-//       .next::after {
-//         font-size: 3rem;
-//       }
-//       .prev {
-//         // position: absolute;
-//         // top: calc(100% - 10rem);
-//         // left: calc(100% - 15rem);
-//         color: $color-main;
-//         background-color: #fff;
-//         border: 2px solid $color-main;
-//         padding: 3rem;
-//         // @include respond(phone) {
-//         //   top: 100%;
-//         //   right: 80%;
-//         //   position: relative;
-//         // }
-//       }
-
-//       .prev::after {
-//         font-size: 3rem;
-//       }
-//     }
-//   }
-//   margin: 5rem 5rem;
-//   @include respond(phone) {
-//     margin: auto;
-//   }
-// }
-
-// .nav-btns {
-//   position: relative;
-//   width: 20rem;
-//   height: 10rem;
-//   background-color: pink;
-// }
-
 .chefs-slider {
   position: relative;
+
   margin: 5rem;
+
+  .imgDots {
+    width: 30rem;
+    height: 40rem;
+
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    @include respond(laptop) {
+      top: -2%;
+      left: -2%;
+    }
+    @include respond(tablet-portrait) {
+      top: -2%;
+      left: -2%;
+    }
+
+    img {
+      width: 100%;
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+
   @include respond(phone) {
     margin: 2rem 1rem;
   }
@@ -125,9 +36,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
     // gap: 5rem;
+
+    @include respond(tablet-portrait) {
+      flex-wrap: nowrap;
+
+      min-height: 50vh;
+    }
     @include respond(phone) {
-      // height: calc(100vh + 5rem);
-      gap: 0;
+      flex-wrap: wrap;
+      gap: 2rem;
       text-align: center;
     }
 
@@ -137,11 +54,21 @@
       padding: 3rem;
       overflow: hidden;
 
+      @include respond(laptop) {
+        width: 30rem;
+        height: 40rem;
+      }
+      @include respond(tablet-portrait) {
+        width: 30rem;
+        height: 30rem;
+        padding: 0;
+      }
       @include respond(phone) {
         // flex-basis: 100%;
         width: 20rem;
         height: 20rem;
         margin: auto;
+        margin-bottom: 3rem;
         // border-radius: 50%;
       }
       img {
@@ -160,6 +87,12 @@
       flex-basis: 60%;
       padding-top: 5rem;
       padding-right: 5rem;
+      @include respond(tablet-portrait) {
+        flex-basis: 100%;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 5rem;
+      }
       @include respond(phone) {
         flex-basis: 100%;
         padding: 0;
@@ -169,6 +102,10 @@
         font-size: 4rem;
         color: $color-gray-dark;
         margin-bottom: 3rem;
+        @include respond(tablet-portrait) {
+          font-size: 3rem;
+          margin-bottom: 1rem;
+        }
         @include respond(phone) {
           font-size: 2rem;
           margin-bottom: 1rem;
@@ -177,6 +114,10 @@
 
       p {
         margin-bottom: 2rem;
+        @include respond(tablet-portrait) {
+          line-height: 1.4;
+          margin-bottom: 1rem;
+        }
         @include respond(phone) {
           text-align: left;
           font-size: 1.5rem;

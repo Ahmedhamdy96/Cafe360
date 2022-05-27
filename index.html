@@ -22,11 +22,14 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
+    <script src="js/app.js" type="module" defer></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <!-- my script -->
     <script src="js/script.js" defer></script>
+
+    <!-- wowjs -->
+    <link rel="stylesheet" href="css/animate.css" />
   </head>
   <body>
     <!-- start scroll-btn -->
@@ -36,6 +39,7 @@
       </span>
     </span>
     <!-- end scroll-btn -->
+
     <!-- start header  -->
     <header>
       <div class="container">
@@ -63,18 +67,18 @@
     <!-- end header -->
 
     <!-- start landing -->
-    <section class="landing">
+    <section class="landing p-top-lg p-bottom-lg">
       <div class="container">
         <div class="text-content">
-          <p>Tasty & Healthy</p>
-          <h1>Food Made With Love!</h1>
+          <p class="m-bottom-sm">Tasty & Healthy</p>
+          <h1 class="wow fadeInDown m-bottom-md">Food Made With Love!</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <button class="btn">Order now</button>
+          <button class="btn m-top-lg m-bottom-lg">Order now</button>
         </div>
         <div class="img-container">
           <img src="/imgs/dish.png" alt="" />
@@ -84,10 +88,10 @@
     <!-- end landing -->
 
     <!-- start our-specialities -->
-    <section class="section-heading">
+    <section class="section-heading center text-center m-top-lg m-bottom-lg">
       <div class="container">
-        <h2>Our Specialities</h2>
-        <p>
+        <h2 class="center text-center">Our Specialities</h2>
+        <p class="center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
           irure dolor in reprehenderit in voluptate velit.
@@ -98,14 +102,24 @@
 
     <!-- start recepies -->
     <section class="recepies">
+      <div class="imgDots imgDots--top">
+        <img src="./imgs/dottd-squre.png" alt="image bg dotted" />
+      </div>
+      <div class="imgDots imgDots--bottom">
+        <img src="./imgs/dottd-squre.png" alt="image bg dotted" />
+      </div>
+
       <div class="container">
         <!-- start a recipe -->
-        <div class="recipe_box">
+        <div
+          class="recipe_box wow bounceInLeft m-bottom-lg"
+          data-wow-duration="2s"
+        >
           <div class="recipe_box__img-container">
             <img src="imgs/specialities1.png" alt="recepie one" />
           </div>
           <div class="recipe_box__details">
-            <h3>Find the best healthy food from us</h3>
+            <h3 class="m-bottom-sm">Find the best healthy food from us</h3>
             <p>
               Slightly believable here are many variations of passages of Lorem
               Ipsum available, but the majority have suffered alteration in top
@@ -117,9 +131,12 @@
         <!-- end a recipe -->
 
         <!-- start a recipe -->
-        <div class="recipe_box second">
+        <div
+          class="recipe_box second wow bounceInRight m-bottom-lg"
+          data-wow-duration="2s"
+        >
           <div class="recipe_box__details second">
-            <h3>The most attractive dishes for you</h3>
+            <h3 class="m-bottom-sm">The most attractive dishes for you</h3>
             <p>
               Slightly believable here are many variations of passages of Lorem
               Ipsum available, but the majority have suffered alteration in top
@@ -134,12 +151,12 @@
         <!-- end a recipe -->
 
         <!-- start a recipe -->
-        <div class="recipe_box">
+        <div class="recipe_box wow bounceInLeft m-bottom-lg">
           <div class="recipe_box__img-container">
             <img src="imgs/specialities3.png" alt="recepie three" />
           </div>
           <div class="recipe_box__details">
-            <h3>Super fast home delivery service</h3>
+            <h3 class="m-bottom-sm">Super fast home delivery service</h3>
             <p>
               Slightly believable here are many variations of passages of Lorem
               Ipsum available, but the majority have suffered alteration in top
@@ -154,10 +171,12 @@
     <!-- end recepies -->
 
     <!-- start top-items -->
-    <section class="section-heading top-items">
+    <section
+      class="section-heading top-items center text-center m-top-lg m-bottom-lg"
+    >
       <div class="container">
-        <h2>Top Item's We Have</h2>
-        <p>
+        <h2 class="center text-center">Top Item's We Have</h2>
+        <p class="center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
           irure dolor in reprehenderit in voluptate velit.
@@ -170,66 +189,13 @@
     <section class="menu">
       <div class="container">
         <div class="categories">
-          <ul>
-            <li class="active">
-              <span>Brealfast</span>
-              <span><i class="fa-solid fa-angle-right"></i></span>
-            </li>
-            <li>
-              <span> Launch </span>
-              <span><i class="fa-solid fa-angle-right"></i></span>
-            </li>
-            <li>
-              <span> Dinner </span>
-              <span><i class="fa-solid fa-angle-right"></i></span>
-            </li>
-            <li>
-              <span> Dessert </span>
-              <span><i class="fa-solid fa-angle-right"></i></span>
-            </li>
-            <li>
-              <span> Shake </span
-              ><span><i class="fa-solid fa-angle-right"></i></span>
-            </li>
-          </ul>
+          <ul></ul>
         </div>
 
         <div class="swiper menuSwiper slider">
           <div class="swiper-wrapper wrapper">
             <!-- start a meal -->
-            <div class="swiper-slide slide">
-              <h4 class="title">Milk in the fruite and zam Tomato Paniyaram</h4>
-              <div class="details">
-                <p class="desc">
-                  Slightly believable here are many variations of passages of
-                  Lorem Ipsum available, but the majority have suffered
-                  alteration in top some form, by injected humour, or randomised
-                  words which is to don't look even .
-                </p>
-                <button class="btn cta">Order now</button>
-              </div>
-              <div class="img">
-                <img src="imgs/breakfast-1.png" alt="breakfast" />
-              </div>
-            </div>
-            <!-- end a meal -->
 
-            <!-- start a meal -->
-            <div class="swiper-slide slide">
-              <h4 class="title">Bread buuter with zam and milk shake</h4>
-              <div class="details">
-                <p class="desc">
-                  Slightly believable here are many variations of passages of
-                  Lorem Ipsum available, but the majority have suffered
-                  alteration in top some form, by injected humour, or randomised
-                  words which is to don't look even .
-                </p>
-                <button class="btn cta">Order now</button>
-              </div>
-              <div class="img">
-                <img src="imgs/breakfast-2.png" alt="breakfast" />
-              </div>
-            </div>
             <!-- end a meal -->
           </div>
 
@@ -243,10 +209,12 @@
     <!-- end menu -->
 
     <!-- start top-happy-users -->
-    <section class="section-heading top-happy-users">
+    <section
+      class="section-heading top-happy-users center text-center m-top-lg m-bottom-lg p-top-lg"
+    >
       <div class="container">
-        <h2>Our Happy User</h2>
-        <p>
+        <h2 class="center text-center">Our Happy User</h2>
+        <p class="center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
           irure dolor in reprehenderit in voluptate velit.
@@ -340,10 +308,12 @@
     <!-- end user-testimonials -->
 
     <!-- start top-great-chefs -->
-    <section class="section-heading top-great-chefs">
+    <section
+      class="section-heading top-great-chefs center text-center m-top-lg m-bottom-lg"
+    >
       <div class="container">
-        <h2>Meet Our Great Chefs</h2>
-        <p>
+        <h2 class="center text-center">Meet Our Great Chefs</h2>
+        <p class="center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
           irure dolor in reprehenderit in voluptate velit.
@@ -355,11 +325,14 @@
     <!-- start chefs-slider -->
     <!-- Swiper -->
     <section class="chefs-slider">
+      <div class="imgDots">
+        <img src="./imgs/dottd-squre.png" alt="image bg dotted" />
+      </div>
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="img">
+              <div class="img wow bounceInLeft">
                 <img src="imgs/chef-1.png" alt="chef image" />
               </div>
               <div class="content">
@@ -421,10 +394,12 @@
 
     <!-- end chefs-slider -->
     <!-- start news -->
-    <section class="section-heading news">
+    <section
+      class="section-heading news center text-center m-top-lg m-bottom-lg"
+    >
       <div class="container">
-        <h2>Want to get the latest update?</h2>
-        <p>
+        <h2 class="center text-center">Want to get the latest update?</h2>
+        <p class="center">
           There are many variations of passagessuffered alteration or eipsum
           dolor sit amet, consectetur adipiscing elit, sed do teiusmod tempor.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -440,15 +415,19 @@
     <!-- end news -->
 
     <!-- start download-app -->
-    <section class="section-heading">
+    <section
+      class="section-heading download center text-center m-top-lg m-bottom-lg"
+    >
       <div class="container">
-        <h2>Download our App Today & Experience Endless Possibilities</h2>
-        <p>
+        <h2 class="center text-center">
+          Download our App Today & Experience Endless Possibilities
+        </h2>
+        <p class="center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
           irure dolor in reprehenderit in voluptate velit.
         </p>
-        <button class="btn my">Download app</button>
+        <button class="btn m-top-lg m-bottom-lg">Download app</button>
       </div>
     </section>
     <!-- end download-app -->
@@ -488,9 +467,17 @@
           </div>
         </div>
 
-        <p class="copyright">created by ahmed hamdy &copy; 2022</p>
+        <p class="copyright">
+          created by ahmed elsayed &copy; 2022 | contact@ahmedabdullatif.com
+        </p>
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- wow js animations -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

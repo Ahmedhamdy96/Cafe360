@@ -1,4 +1,7 @@
 .landing {
+  background-image: url("./../imgs/bg-shape1.png");
+  background-repeat: no-repeat;
+  background-position: center;
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -15,17 +18,19 @@
     }
     p:first-of-type {
       color: $color-gray-dark;
-      margin-bottom: 1rem;
+
+      @include respond(phone) {
+      }
     }
     p:last-of-type {
-      margin: 4rem 0;
+      @include respond(phone) {
+      }
     }
 
     .img-container {
-      padding-top: 4rem;
+      // padding-top: 4rem;
       flex-basis: 50%;
       @include respond(tablet-portrait) {
-        flex-basis: 40%;
       }
 
       @include respond(phone) {
@@ -39,6 +44,14 @@
         top: 0;
         left: 10rem;
         animation: spinDish 30s infinite linear;
+
+        @include respond(laptop) {
+          left: 0;
+        }
+
+        @include respond(tablet-landscape) {
+          left: 0;
+        }
         @include respond(tablet-portrait) {
           left: 0;
         }
