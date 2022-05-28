@@ -6,7 +6,7 @@ const menu = [
     description:
       "Slightly believable here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in top some form, by injected humour, or randomised words which is to don't look even .",
     price: 20,
-    imgSrc: "./../imgs/breakfast-1.png",
+    imgSrc: "./imgs/breakfast-1.png",
   },
   {
     category: "breakfast",
@@ -15,7 +15,7 @@ const menu = [
       "Slightly believable here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in top some form, by injected humour, or randomised words which is to don't look even .",
 
     price: 26,
-    imgSrc: "./../imgs/breakfast-2.png",
+    imgSrc: "./imgs/breakfast-2.png",
   },
 
   //   launch
@@ -26,7 +26,7 @@ const menu = [
       "Slightly believable here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in top some form, by injected humour, or randomised words which is to don't look even .",
 
     price: 23.99,
-    imgSrc: "./../imgs/launch-1.png",
+    imgSrc: "./imgs/launch-1.png",
   },
   {
     category: "launch",
@@ -35,7 +35,7 @@ const menu = [
       "Slightly believable here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in top some form, by injected humour, or randomised words which is to don't look even .",
 
     price: 33.5,
-    imgSrc: "./../imgs/launch-2.png",
+    imgSrc: "./imgs/launch-2.png",
   },
   //  dinner
   {
@@ -46,7 +46,7 @@ const menu = [
       "Slightly believable here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in top some form, by injected humour, or randomised words which is to don't look even .",
 
     price: 29.99,
-    imgSrc: "./../imgs/dinner-1.png",
+    imgSrc: "./imgs/dinner-1.png",
   },
   {
     category: "dinner",
@@ -55,7 +55,7 @@ const menu = [
       "Slightly believable here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in top some form, by injected humour, or randomised words which is to don't look even .",
 
     price: 40.0,
-    imgSrc: "./../imgs/dinner-2.png",
+    imgSrc: "./imgs/dinner-2.png",
   },
 
   //  dessert
@@ -68,7 +68,7 @@ const menu = [
 
     price: 29.99,
 
-    imgSrc: "./../imgs/dessert-1.png",
+    imgSrc: "./imgs/dessert-1.png",
   },
   {
     category: "dessert",
@@ -77,7 +77,7 @@ const menu = [
       "Slightly believable here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in top some form, by injected humour, or randomised words which is to don't look even .",
 
     price: 40.0,
-    imgSrc: "./../imgs/dessert-2.png",
+    imgSrc: "./imgs/dessert-2.png",
   },
   //  shake
   {
@@ -88,7 +88,7 @@ const menu = [
       "Slightly believable here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in top some form, by injected humour, or randomised words which is to don't look even .",
 
     price: 29.99,
-    imgSrc: "./../imgs/shake-1.png",
+    imgSrc: "./imgs/shake-1.png",
   },
 ];
 
