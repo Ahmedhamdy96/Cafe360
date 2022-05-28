@@ -14,11 +14,9 @@
     flex-wrap: wrap;
 
     .circles {
-      // width: 50%;
       width: 60rem;
       height: 60rem;
       @include respond(tablet-portrait) {
-        // padding-top: 5rem;
         margin-top: 5rem;
       }
       @include respond(phone) {
@@ -71,8 +69,6 @@
               width: 5rem;
               height: 5rem;
             }
-
-            // transform: rotate(-50deg);
           }
         }
         &:last-of-type {

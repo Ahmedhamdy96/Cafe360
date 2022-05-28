@@ -2,24 +2,25 @@
   position: fixed;
 
   bottom: 2rem;
-  right: 2rem;
+  right: -200rem;
+  transition: 2s;
   cursor: pointer;
-  z-index: 555;
+  z-index: 500;
 
   & .icon {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 5rem;
-    height: 5rem;
-    background-color: #fff;
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-btn;
     border: 3px solid $color-main;
     color: $color-main;
     font-size: 3rem;
     transition: 0.3s;
     &:hover {
-      color: #fff;
+      color: $color-btn;
       background-color: $color-main;
     }
   }

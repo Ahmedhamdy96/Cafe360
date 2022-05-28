@@ -67,3 +67,19 @@ document
   .addEventListener("click", () => {
     window.scrollTo(0, 0);
   });
+
+// mobile nav
+
+document.querySelector(".burger-icon").addEventListener("click", () => {
+  document.querySelector(".mobile-nav").classList.toggle("active");
+});
+
+// display scroll btn
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 30) {
+    document.querySelector(".scroll-btn-container").style.right = "2rem";
+  } else {
+    document.querySelector(".scroll-btn-container").style.right = "-200rem";
+  }
+});

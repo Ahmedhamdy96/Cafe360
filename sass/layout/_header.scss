@@ -68,8 +68,10 @@ header {
 
     .burger-icon {
       display: none;
+      height: 3rem;
       color: $color-main;
       position: fixed;
+      z-index: 55555;
       right: 2rem;
       top: 2rem;
       font-size: 3rem;
